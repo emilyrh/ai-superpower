@@ -9,17 +9,24 @@
   <body>
     <header><h1>Not so super powers</h1></header>
     <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Which superpower do you wish you had?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>The AI outcome will go here</div>
+      <div class="form-container">
+        <form id="superpower-generator-form">
+          <input
+            type="text"
+            placeholder="Enter a superpower do you wish you had"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e invisibility, flying</div>
+      </div>
+      <div class="superpower hidden" id="superpower">
+        The AI outcome will go here
+      </div>
     </main>
 
     <footer>
